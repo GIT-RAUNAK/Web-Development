@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>University Registration Form</h1>
+        <p>Please fill out the form below to register.</p>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <h2>Personal Details</h2>
+
+            <label for="First_Name">First Name:</label>
+            <input type="text" id="First_Name" name="user_fname" placeholder="e.g., Arjun" required>
+            <br><br>
+
+            <label for="Last_Name">Last Name</label>
+            <input type="text" id="Last_Name" name="user_lname" placeholder="e.g., Kumar" required>
+            <br><br>
+
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" name="user_dob" required>
+            <br><br>
+
+            <label>Gender</label>
+            <br>
+            <input type="radio" id="male" name="User_Gender" value="Male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="User_Gender" value="Female">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" id="other" name="User_Gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="file">Upload Your Photo</label>
+            <br>
+            <input type="file" id="file" name="User_File" accept=".png,.jpeg,.jpg" required>
+
+            <hr>
+
+            <h2>Contact Information</h2>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="user_email" placeholder="e.g., 123@gmail.com">
+            <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="user_phone" placeholder="e.g., 1234567890">
+            <br><br>
+            <label for="letter">Mailing Address:</label>
+            <br>
+            <textarea id="letter" name="user_cover_letter" rows="5" cols="20" placeholder="Street Address, City, State, Zip Code"></textarea>
+            <br><br>
+
+            <hr>
+
+            <h2>Academic Information</h2>
+
+            <label for="Course">Select Your Course:</label>
+            <br>
+            <select id="Course" name="Course">
+                <option value="PS">Probability & Statistics</option>
+                <option value="DS">Data Structures</option>
+                <option value="DSD">Digital and System Design</option>
+                <option value="AFL">Automata and Formal Language</option>
+            </select>
+            <br><br>
+            <label>Extracurricular Interests:</label>
+            <br>
+            <input type="checkbox" id="sports" value="Sports" name="interests[]">
+            <label for="sports">Sports</label>
+            <br>
+            <input type="checkbox" id="Music_Arts" value="Music&Arts" name="interests[]">
+            <label for="Music_Arts">Music&Arts</label>
+            <br>
+            <input type="checkbox" id="Tech_Clubs" value="Technology Clubs" name="interests[]">
+            <label for="Tech_Clubs">Technology Clubs</label>
+            <br>
+            <input type="checkbox" id="Volunteery" value="Volunteering" name="interests[]">
+            <label for="Volunteery">Volunteering</label>
+            <br>
+            <hr>
+            <h2>Create Your Account</h2>
+            <label for="Pass">Create a PassWord:</label>
+            <input type="password" id="Pass" name="User_password" required>
+            <br><br>
+            <label for="csecurity_question">Security Question:</label>
+            <select id="security_question" name="security_question" required>
+                <option value="">-- Select a question --</option>
+                <option value="pet">What was your first pet's name?</option>
+                <option value="school">What was the name of your first school?</option>
+                <option value="city">In which city were you born?</option>
+            </select>
+            <br><br>
+            <label for="ans">Security Answer:</label>
+            <input type="text" id="ans" name="captcha_input" required>
+            <br><br>
+            <input type="checkbox" id="confirm" name="confirmation" required>
+            <label for="confirm">I agree to the Terms and Conditions</label>    
+            <hr>
+        <footer>
+            <button type="submit">Register</button>
+            <button type="reset">Clear All</button>
+        </footer>
+        </form>
+    </main>
+</body>
+</html>
