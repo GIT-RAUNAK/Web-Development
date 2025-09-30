@@ -1,5 +1,5 @@
 #Header{
-    height: 55vw;
+    height: 8vh;
     text-align: center;
     background-color: aqua;
     font-weight: 1000;
@@ -7,9 +7,9 @@
 }
 
 #pic{
-    height:650px;
-    width: 650px;
+    font-size: 1em;
     background-color: yellow;
+    image-orientation: flip;
 }
 
 .header2{
