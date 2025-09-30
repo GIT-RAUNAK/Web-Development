@@ -1,0 +1,22 @@
+#Header{
+    height: 55vw;
+    text-align: center;
+    background-color: aqua;
+    font-weight: 1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pic{
+    height:650px;
+    width: 650px;
+    background-color: yellow;
+}
+
+.header2{
+    background-color: blueviolet;
+    font-size: 50px;
+}
+
+#footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
