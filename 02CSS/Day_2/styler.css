@@ -1,0 +1,43 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1{
+    background-color: aqua;
+}
+
+#intro{
+    background-color: chartreuse;
+    padding: 10px 20px;
+    margin: 10px 15px 20px 25px;
+    border: 10px;
+    border-style: double;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+ol{
+    background-color: bisque;
+}
+
+#end{
+    background-color: aquamarine;
+}
+
+#pic{
+    padding: 20px;
+    border: 5px;
+    border-color: black;
+    border-style: dashed;
+    margin: 30px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+._1{
+    border: 2px solid;
+    border-radius: 20%;
+    padding: 20px;
+    margin: 20px 0;
+}
