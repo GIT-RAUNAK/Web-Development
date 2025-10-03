@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+
+#container{
+    margin: 20% 30%;
+    height: 400px;
+    width: 600px;
+    background-color: yellow;
+    position: relative;
+}
+
+.first{
+    background-color: rgb(12, 66, 127);
+}
+
+.one{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.two{
+    height: 180px;
+    width: 380px;
+    position: absolute;
+    top: 0px;
+    right: 0px;;
+}
+
+.three{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.four{
+    height: 180px;
+    width: 380px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;;
+}
