@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    background-color: rgb(121, 76, 17);
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    gap: 25px;
+    
+}
+
+.one{
+    background-color: red;
+    font-size: 50px;
+    /* margin: 25px; */
+    padding: 5px;
+    height: 10%;
+    /* flex-grow: 2; */
+    /* flex: 2 1 1px; */
+}
+
+.two{
+    background-color: green;
+    font-size: 50px;
+    /* margin: 25px; */
+    padding: 5px;
+    height: 10%;
+    /* flex-grow: 3; */
+    /* align-self: self-start; */
+}
+
+.three{
+    background-color: pink;
+    font-size: 50px;
+    /* margin: 25px; */
+    padding: 5px;
+    height: 10%;
+    /* flex-grow: 5; */
+}
+
+.four{
+    background-color: purple;
+    font-size: 50px;
+    /* margin: 25px; */
+    padding: 5px;
+    height: 10%;
+    /* flex-grow: 4; */
+}
