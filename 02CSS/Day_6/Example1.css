@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 800px;
+    width: 800px;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        background-color: red;
+    }
+}
