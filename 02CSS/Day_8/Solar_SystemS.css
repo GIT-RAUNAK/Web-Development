@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: radial-gradient(black, #02010a);
+    overflow: hidden;
+    position: relative;
+}
+
+.sun{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(255, 77, 0);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mercury{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(255, 187, 0);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(238, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving1;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving1 {
+    from{
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg) translate(200px) rotate(-360deg);
+    }
+}
+
+.venus{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 55, 0, 0.6);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving2;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving2 {
+    from{
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg) translate(300px) rotate(-360deg);
+    }
+}
+
+.earth{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 179, 255, 0.6);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(0, 21, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving3;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving3 {
+    from{
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg) translate(400px) rotate(-360deg);
+    }
+}
+
+.mars{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(255, 0, 0);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(255, 136, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving4;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving4 {
+    from{
+        transform: rotate(0deg) translateX(500px) rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg) translate(500px) rotate(-360deg);
+    }
+}
+
+.jupiter{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 213, 0, 0.6);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(255, 247, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving5;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving5 {
+    from{
+        transform: rotate(0deg) translateX(600px) rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg) translate(600px) rotate(-360deg);
+    }
+}
+
+.saturn{
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 196, 0, 0.189);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(255, 200, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving6;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving6 {
+    from{
+        transform: rotate(0deg) translateX(700px) rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg) translate(800px) rotate(-360deg);
+    }
+}
+
+.uranus{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 60, 255, 0.6);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(0, 140, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving6;
+    animation-duration: 110s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving7 {
+    from{
+        transform: rotate(0deg) translateX(800px) rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg) translate(800px) rotate(-360deg);
+    }
+}
+
+.neptune{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(43, 0, 255, 0.189);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(0, 157, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: moving8;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moving8 {
+    from{
+        transform: rotate(0deg) translateX(900px) rotate(0deg);
+    }
+    to{
+       transform: rotate(3600deg) translate(900px) rotate(-360deg);
+    }
+}
+
