@@ -1,268 +1,150 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background: radial-gradient(black, #02010a);
-    overflow: hidden;
-    position: relative;
+body {
+  height: 100vh;
+  background: radial-gradient(black, #02010a);
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 
-.sun{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgb(255, 77, 0);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sun {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(255, 77, 0);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 15px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
 }
 
-.mercury{
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgb(255, 187, 0);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(238, 255, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving1;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Common style for all planets */
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
 }
 
+/* Individual planets - smaller sizes */
+.mercury {
+  height: 1.2vw;
+  width: 1.2vw;
+  background-color: rgb(255, 187, 0);
+  box-shadow: 0 0 25px rgb(238, 255, 0);
+  animation: moving1 10s linear infinite;
+}
+
+.venus {
+  height: 2vw;
+  width: 2vw;
+  background-color: rgba(255, 55, 0, 0.6);
+  box-shadow: 0 0 25px rgb(255, 0, 0);
+  animation: moving2 20s linear infinite;
+}
+
+.earth {
+  height: 2.5vw;
+  width: 2.5vw;
+  background-color: rgba(0, 179, 255, 0.6);
+  box-shadow: 0 0 25px rgb(0, 21, 255);
+  animation: moving3 30s linear infinite;
+}
+
+.mars {
+  height: 1.8vw;
+  width: 1.8vw;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 0 25px rgb(255, 136, 0);
+  animation: moving4 40s linear infinite;
+}
+
+.jupiter {
+  height: 3vw;
+  width: 3vw;
+  background-color: rgba(255, 213, 0, 0.6);
+  box-shadow: 0 0 25px rgb(255, 247, 0);
+  animation: moving5 50s linear infinite;
+}
+
+.saturn {
+  height: 2.8vw;
+  width: 2.8vw;
+  background-color: rgba(255, 196, 0, 0.189);
+  box-shadow: 0 0 25px rgb(255, 200, 0);
+  animation: moving6 60s linear infinite;
+}
+
+.uranus {
+  height: 2.5vw;
+  width: 2.5vw;
+  background-color: rgba(0, 60, 255, 0.6);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+  animation: moving7 70s linear infinite;
+}
+
+.neptune {
+  height: 2.2vw;
+  width: 2.2vw;
+  background-color: rgba(43, 0, 255, 0.189);
+  box-shadow: 0 0 25px rgb(0, 157, 255);
+  animation: moving8 80s linear infinite;
+}
+
+/* Orbit animations - reduced orbit radius */
 @keyframes moving1 {
-    from{
-        transform: rotate(0deg) translateX(200px) rotate(0deg);
-    }
-    to{
-        transform: rotate(3600deg) translate(200px) rotate(-360deg);
-    }
-}
-
-.venus{
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(255, 55, 0, 0.6);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(255, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving2;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(12vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(12vh) rotate(-360deg); }
 }
 
 @keyframes moving2 {
-    from{
-        transform: rotate(0deg) translateX(300px) rotate(0deg);
-    }
-    to{
-        transform: rotate(3600deg) translate(300px) rotate(-360deg);
-    }
-}
-
-.earth{
-    height: 90px;
-    width: 90px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(0, 179, 255, 0.6);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(0, 21, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving3;
-    animation-duration: 70s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(17vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(17vh) rotate(-360deg); }
 }
 
 @keyframes moving3 {
-    from{
-        transform: rotate(0deg) translateX(400px) rotate(0deg);
-    }
-    to{
-        transform: rotate(3600deg) translate(400px) rotate(-360deg);
-    }
-}
-
-.mars{
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgb(255, 0, 0);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(255, 136, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving4;
-    animation-duration: 80s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(22vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(22vh) rotate(-360deg); }
 }
 
 @keyframes moving4 {
-    from{
-        transform: rotate(0deg) translateX(500px) rotate(0deg);
-    }
-    to{
-        transform: rotate(3600deg) translate(500px) rotate(-360deg);
-    }
-}
-
-.jupiter{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(255, 213, 0, 0.6);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(255, 247, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving5;
-    animation-duration: 90s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(27vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(27vh) rotate(-360deg); }
 }
 
 @keyframes moving5 {
-    from{
-        transform: rotate(0deg) translateX(600px) rotate(0deg);
-    }
-    to{
-        transform: rotate(3600deg) translate(600px) rotate(-360deg);
-    }
-}
-
-.saturn{
-    height: 130px;
-    width: 130px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(255, 196, 0, 0.189);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(255, 200, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving6;
-    animation-duration: 100s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(32vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(32vh) rotate(-360deg); }
 }
 
 @keyframes moving6 {
-    from{
-        transform: rotate(0deg) translateX(700px) rotate(0deg);
-    }
-    to{
-        transform: rotate(3600deg) translate(800px) rotate(-360deg);
-    }
-}
-
-.uranus{
-    height: 110px;
-    width: 110px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(0, 60, 255, 0.6);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(0, 140, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving6;
-    animation-duration: 110s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(37vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(37vh) rotate(-360deg); }
 }
 
 @keyframes moving7 {
-    from{
-        transform: rotate(0deg) translateX(800px) rotate(0deg);
-    }
-    to{
-        transform: rotate(3600deg) translate(800px) rotate(-360deg);
-    }
-}
-
-.neptune{
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(43, 0, 255, 0.189);
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgb(0, 157, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: moving8;
-    animation-duration: 120s;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(42vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(42vh) rotate(-360deg); }
 }
 
 @keyframes moving8 {
-    from{
-        transform: rotate(0deg) translateX(900px) rotate(0deg);
-    }
-    to{
-       transform: rotate(3600deg) translate(900px) rotate(-360deg);
-    }
+  from { transform: translate(-50%, -50%) rotate(0deg) translateX(47vh) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateX(47vh) rotate(-360deg); }
 }
-
