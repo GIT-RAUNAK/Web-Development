@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+.card{
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    border-style: hidden;
+    box-shadow: 0 0 10px 2px rgb(37, 36, 36);
+}
+
+.photo{
+    height: 30%;
+    position: relative;
+    background-color: rgb(0, 126, 252);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    border-style: solid;
+    border-color: white;
+    background-color: blue;
+}
+
+.content{
+    height: 10%;
+    padding: 5px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.insta{
+    padding-top: 20px;
+    height: auto;
+    width: 40px;
+}
+
+.twitter{
+    padding-top: 20px;
+    height: auto;
+    width: 40px;
+}
+
+.linkedin{
+    padding-top: 20px;
+    height: auto;
+    width: 40px;
+}
+
+.git{
+    padding-top: 20px;
+    height: auto;
+    width: 40px;
+}
+
+.imp{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.imp button{
+    height: 50px;
+    width: 180px;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(0, 60, 255);
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: rgb(0, 213, 255);
+}
+
+.impression {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.button-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-right: 1px solid #ccc;
+    gap: 8px;
+}
+
+.button-container:last-child {
+    border-right: none;
+}
+
+.button-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button-container button:hover {
+    transform: scale(1.2);
+}
+
+.button-container:hover img {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(91%) saturate(1445%) hue-rotate(345deg) brightness(103%) contrast(97%);
+}
+
+
+.button-container:hover i {
+    color: orangered;
+}
+
+.button-container img {
+    width: 24px;
+    height: 24px;
+}
+
+
