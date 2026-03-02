@@ -1,162 +1,87 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.253);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(93, 137, 137);
 }
 
-.card{
-    height: 600px;
-    width: 500px;
-    border-radius: 10px;
-    background-color: white;
-    border-style: hidden;
-    box-shadow: 0 0 10px 2px rgb(37, 36, 36);
+#Container{
+    height:65%;
+    width:35%;
+    border-radius:8px;
+    box-shadow:5px 5px 10px rgba(128,128,128,0.4);
+    overflow:hidden;
 }
 
-.photo{
-    height: 30%;
-    position: relative;
-    background-color: rgb(0, 126, 252);
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
+#UpperHalf{
+    height:35%;
+    width:100%;
+    background-color:bisque;
+    position:relative;
 }
 
-.photo img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    position: absolute;
-    top: 40%;
-    border-style: solid;
-    border-color: white;
-    background-color: blue;
+#Avatar{
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
 
-.content{
+img{
+    height: 200px;
+    width: 200px;
+    border-radius:10%;
+    object-fit:cover;
+    border:3px solid white;
+    box-shadow:0 0 0 3px bisque;
+}
+#MiddleHalf{
     height: 10%;
-    padding: 5px;
+    width: 100%;
+    background-color: white;
+}
+#LowerHalf{
+    height:50%;
+    width:100%;
+    padding-top:80px;
+    background-color: white;
 }
 
-.about{
-    display: flex;
-    justify-content: center;
+.About{
+    text-align:center;
 }
 
-.social{
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.About h3 h4{
+    color: rgb(118, 75, 23);
 }
 
-.insta{
-    padding-top: 20px;
-    height: auto;
-    width: 40px;
+.Social{
+    text-align:center;
+    margin-top:20px;
 }
 
-.twitter{
-    padding-top: 20px;
-    height: auto;
-    width: 40px;
+.Social a{
+    font-size:18px;
+    color:#a18137;
+    margin:5px;
+    text-decoration:none;
 }
 
-.linkedin{
-    padding-top: 20px;
-    height: auto;
-    width: 40px;
+.Social a i{
+    margin-right:3px;
 }
 
-.git{
-    padding-top: 20px;
-    height: auto;
-    width: 40px;
+.Social a:hover{
+    transform:scale(1.2);
 }
 
-.imp{
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    padding-top: 20px;
+.Social Span{
+    color:#372805ee;
 }
-
-.imp button{
-    height: 50px;
-    width: 180px;
-    color: white;
-    font-size: 25px;
-    background-color: rgb(0, 60, 255);
-    cursor: pointer;
-    border-color: transparent;
-    border-radius: 20px;
-}
-
-button:hover{
-    background-color: rgb(0, 213, 255);
-}
-
-.impression {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    
-}
-
-.button-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    border-right: 1px solid #ccc;
-    gap: 8px;
-}
-
-.button-container:last-child {
-    border-right: none;
-}
-
-.button-container button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.button-container button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.button-container button:hover {
-    transform: scale(1.2);
-}
-
-.button-container:hover img {
-    filter: brightness(0) saturate(100%) invert(48%) sepia(91%) saturate(1445%) hue-rotate(345deg) brightness(103%) contrast(97%);
-}
-
-
-.button-container:hover i {
-    color: orangered;
-}
-
-.button-container img {
-    width: 24px;
-    height: 24px;
-}
-
-
